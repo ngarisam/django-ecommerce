@@ -1,0 +1,47 @@
+{% extends 'myshop/base.html' %}
+{% load static %}
+{% block title %} Category {% endblock title %}
+{% block banner-slider %} 
+
+<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+        <img src="{% static 'myshop/images/banner/b1.jpg' %}" class="d-block w-100" alt="Dairy products">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'myshop/images/banner/b2.jpg' %}" class="d-block w-100" alt="Dairy products">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'myshop/images/banner/b3.jpg' %}" class="d-block w-100" alt="Dairy products">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'myshop/images/banner/b4.jpg' %}" class="d-block w-100" alt="Dairy products">
+        <p class="mlkpro">Milk</p>
+    </div>
+    </div>
+</div>
+
+{% endblock banner-slider %}
+{% block main-content %}
+<div class="container">
+    <div class="text-center">
+        <h2>About us</h2>
+        <p>Welcome to Neel, your one-stop destination for premium dairy products. We are committed to delivering the finest quality milk and dairy products to your doorstep. With years of expertise and a deep understanding of the dairy industry, we take pride in offering a wide range of dairy products that meet the highest standards of purity, freshness, and taste.
+
+        </p>
+        <p>
+            At Neel, we source our milk from trusted local farmers who prioritize the well-being of their cows and follow sustainable farming practices. Our state-of-the-art dairy processing facility ensures that the milk undergoes rigorous quality checks and undergoes minimal processing to retain its natural goodness.  
+        </p>
+        <h2>Mission</h2>
+        <p>
+            At Neel, our mission is to provide the highest quality dairy products that nourish and delight our customers. We strive to be the preferred choice for dairy enthusiasts by offering a diverse range of products that embody purity, freshness, and exceptional taste. Through sustainable sourcing, innovative processes, and a commitment to excellence, we aim to contribute to the well-being and happiness of our customers and the community.
+        </p>
+        <p>
+            <h2>Vision</h2>
+            <p>
+                Our vision at Neel is to be a leading name in the dairy industry, recognized for our unwavering dedication to quality, customer satisfaction, and sustainability. We envision a future where Neel products are synonymous with trust, authenticity, and indulgence. We aspire to expand our product portfolio, innovate new offerings, and embrace cutting-edge technologies to continuously exceed customer expectations. By fostering strong relationships with our partners and cultivating a culture of continuous improvement, we strive to make Neel a brand that people love and trust for their dairy needs.
+
+            </p>
+        </div>
+</div>
+{% endblock main-content %}
